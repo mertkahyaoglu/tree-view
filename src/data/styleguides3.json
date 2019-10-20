@@ -1,0 +1,117 @@
+[
+    {
+        "id": 1,
+        "parent": null,
+        "ancestors": []
+    },
+    {
+        "id": 2,
+        "parent": 1,
+        "ancestors": [1]
+    },
+    {
+        "id": 3,
+        "parent": 1,
+        "ancestors": [1]
+    },
+    {
+        "id": 4,
+        "parent": 2,
+        "ancestors": [1]
+    },
+    {
+        "id": 5,
+        "parent": 2,
+        "ancestors": [1, 2]
+    },
+    {
+        "id": 6,
+        "parent": 2,
+        "ancestors": [1, 2]
+    },
+    {
+        "id": 61,
+        "parent": 2,
+        "ancestors": [1, 2]
+    },
+    {
+        "id": 7,
+        "parent": 3,
+        "ancestors": [1, 3]
+    },
+    {
+        "id": 8,
+        "parent": 4,
+        "ancestors": [1, 3, 4]
+    },
+    {
+        "id": 9,
+        "parent": 4,
+        "ancestors": [1, 3, 4]
+    },
+    {
+        "id": 10,
+        "parent": 4,
+        "ancestors": [1, 3, 4]
+    },
+    {
+        "id": 11,
+        "parent": 8,
+        "ancestors": [1, 3, 4, 8]
+    },
+    {
+        "id": 12,
+        "parent": 9,
+        "ancestors": [1, 3, 4, 9]
+    },
+    {
+        "id": 13,
+        "parent": 12,
+        "ancestors": [1, 3, 4, 9, 12]
+    },
+    {
+        "id": 14,
+        "parent": 12,
+        "ancestors": [1, 3, 4, 9, 12]
+    },
+    {
+        "id": 15,
+        "parent": 12,
+        "ancestors": [1, 3, 4, 9, 12]
+    },
+    {
+        "id": 16,
+        "parent": 12,
+        "ancestors": [1, 3, 4, 9, 12]
+    },
+    {
+        "id": 17,
+        "parent": 13,
+        "ancestors": [1, 3, 4, 9, 12, 13]
+    },
+    {
+        "id": 18,
+        "parent": 14,
+        "ancestors": [1, 3, 4, 9, 12, 14]
+    },
+    {
+        "id": 19,
+        "parent": 15,
+        "ancestors": [1, 3, 4, 9, 12, 15]
+    },
+    {
+        "id": 20,
+        "parent": 15,
+        "ancestors": [1, 3, 4, 9, 12, 16]
+    },
+    {
+        "id": 21,
+        "parent": 15,
+        "ancestors": [1, 3, 4, 9, 12, 16]
+    },
+    {
+        "id": 22,
+        "parent": 16,
+        "ancestors": [1, 3, 4, 9, 12, 16]
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "parent": null,
+        "ancestors": []
+    },
+    {
+        "id": 2,
+        "parent": 1,
+        "ancestors": [1]
+    },
+    {
+        "id": 3,
+        "parent": null,
+        "ancestors": [],
+        "archived": true
+    },
+    {
+        "id": 4,
+        "parent": 3,
+        "ancestors": [1],
+        "archived": true
+    }
+]

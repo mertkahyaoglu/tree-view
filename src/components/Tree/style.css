@@ -1,0 +1,19 @@
+.tree {
+    text-align: center;
+    margin-right: 24px;
+}
+
+.tree .nodes {
+    display: flex;
+    margin: 0 12px;
+}
+
+.tree .level {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.tree .level:not(:last-child) {
+    margin-bottom: 60px;
+}

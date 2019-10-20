@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "parent": null,
+        "ancestors": []
+    },
+    {
+        "id": 2,
+        "parent": 1,
+        "ancestors": [1]
+    },
+    {
+        "id": 3,
+        "parent": 1,
+        "ancestors": [1]
+    },
+    {
+        "id": 4,
+        "parent": 1,
+        "ancestors": [1]
+    },
+    {
+        "id": 5,
+        "parent": 2,
+        "ancestors": [1, 3]
+    },
+    {
+        "id": 6,
+        "parent": 2,
+        "ancestors": [1, 2]
+    },
+    {
+        "id": 7,
+        "parent": 2,
+        "ancestors": [1, 2]
+    },
+    {
+        "id": 8,
+        "parent": 2,
+        "ancestors": [1,2]
+    },
+    {
+        "id": 9,
+        "parent": 3,
+        "ancestors": [1, 3]
+    },
+    {
+        "id": 10,
+        "parent": 4,
+        "ancestors": [1, 4]
+    }
+]
