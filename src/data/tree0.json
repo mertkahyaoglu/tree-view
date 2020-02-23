@@ -12,13 +12,11 @@
     {
         "id": 3,
         "parent": null,
-        "ancestors": [],
-        "archived": true
+        "ancestors": []
     },
     {
         "id": 4,
         "parent": 3,
-        "ancestors": [1],
-        "archived": true
+        "ancestors": [1]
     }
 ]

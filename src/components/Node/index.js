@@ -1,11 +1,13 @@
 import React from 'react'
-
 import classnames from "classnames";
+
+import { NODE_WIDTH, NODE_HEIGHT } from '../../constants';
 
 import "./style.css";
 
-export default class Node extends React.Component {
+const nodeStyle = { width: NODE_WIDTH, height: NODE_HEIGHT };
 
+export default class Node extends React.Component {
   handleRef = (el) => {
     const { onRef, node: { id } } = this.props;
     if (onRef) {
@@ -16,8 +18,12 @@ export default class Node extends React.Component {
   render() {
     const { node: { id, parentId } } = this.props;
     const classes = classnames("node", { hasParent: !!parentId })
+
     return (
-      <div ref={this.handleRef} class={classes}>{id}</div>
+      <div
+        style={nodeStyle}
+        ref={this.handleRef}
+        class={classes}>{id}</div>
     );
   }
 }

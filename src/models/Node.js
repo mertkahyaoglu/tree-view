@@ -1,8 +1,8 @@
 export default class Node {
-    constructor(id, parentId, children, data) {
+    constructor(id, parentId, children = [], data) {
         this.id = id;
         this.parentId = parentId;
-        this.children = children || [];
+        this.children = children;
         this.data = data;
     }
 
@@ -12,9 +12,5 @@ export default class Node {
 
     get isLeaf() {
         return this.children.length === 0;
-    }
-
-    get isArchived() {
-        return !!this.data.archived;
     }
 }

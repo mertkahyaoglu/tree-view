@@ -2,15 +2,9 @@ import React from 'react';
 
 import Lines from "../Lines";
 import Node from "../Node";
+import { groupBy } from '../../utils';
 
 import "./style.css";
-
-function groupBy(xs, key) {
-  return xs.reduce(function(rv, x) {
-    (rv[x[key]] = rv[x[key]] || []).push(x);
-    return rv;
-  }, {});
-}
 
 // forms an object that groups nodes with their weights by their parentId
 function prepareNodes(levelNodes) {
@@ -53,15 +47,11 @@ function prepareNodes(levelNodes) {
 }
 
 export default class Tree extends React.Component {
-  constructor(props) {
-    super(props);
+  nodeRefs = {};
 
-    this.nodeRefs = {};
-
-    this.state = {
-      mounted: false
-    }
-  }
+  state = {
+    mounted: false
+  };
 
   componentDidMount() {
     this.setState({ mounted: true })
@@ -84,6 +74,7 @@ export default class Tree extends React.Component {
     const otherLevels = tree.levels.map((level, i) => {
       const nodesMap = prepareNodes(level.nodes);
       const totalWeight = Object.keys(nodesMap).length;
+
       return (
         <div class="level" key={i}>
           {Object.entries(nodesMap).map(([parentId, nodeObj]) => {

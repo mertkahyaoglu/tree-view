@@ -1,13 +1,13 @@
 .lines {
-    position: absolute;
-    top: -60px;
-    left: 15px;
+  position: absolute;
 }
 
 .lines path {
-    stroke: #edeced;stroke-width: 2px;fill: none
+  stroke: #edeced;
+  stroke-width: 2px;
+  fill: none;
 }
 
 .lines path:hover {
-    stroke: #419bf9;
+  stroke: #419bf9;
 }

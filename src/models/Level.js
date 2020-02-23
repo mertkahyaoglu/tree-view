@@ -1,6 +1,6 @@
 export default class Level {
-    constructor(level, nodes) {
+    constructor(level, nodes = []) {
         this.level = level;
-        this.nodes = nodes || [];
+        this.nodes = nodes;
     }
 }
